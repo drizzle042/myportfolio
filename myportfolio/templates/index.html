@@ -1,0 +1,550 @@
+﻿{% extends './base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Canon{% endblock %}</title>
+</head>
+<body>
+
+{% block content %}
+    <!-- ==================== Start Slider ==================== -->
+
+    <header class="slider slider-prlx fixed-slider text-center">
+        <div class="swiper-container parallax-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="bg-img valign" data-background="{% static 'img/slid/01.jpg' %}" data-overlay-dark="6">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <div class="caption center mt-30">
+                                        <h1>Business <span class="color-font">value</span> <br> <span class="color-font">through</span> digital <span class="color-font">products</span></h1>
+                                        <a href="#0" class="butn bord curve mt-30">
+                                            <span>See More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-img valign" data-background="{% static 'img/slid/03.jpg' %}" data-overlay-dark="6">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-9">
+                                    <div class="caption center mt-30">
+                                        <h1 class="color-font">Digital <br> Design Awards</h1>
+                                        <p>Get awarding creative visions you had never imagined.
+                                            No better awarding experience than good design convincing good value</p>
+                                        <a href="#0" class="butn bord curve mt-30">
+                                            <span>See More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-img valign" data-background="{% static 'img/slid/02.jpg' %}" data-overlay-dark="6">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 col-md-9">
+                                    <div class="caption center mt-30">
+                                        <h1 class="color-font">Original Solutions</h1>
+                                        <p>If you need to redesign your new project, new visual strategy, ux structure
+                                            or you do have some cool ideas for collaboration.</p>
+                                        <a href="#0" class="butn bord curve mt-30">
+                                            <span>See More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slider setting -->
+            <div class="setone setwo">
+                <div class="swiper-button-next swiper-nav-ctrl next-ctrl cursor-pointer">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="swiper-button-prev swiper-nav-ctrl prev-ctrl cursor-pointer">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+            </div>
+            <div class="swiper-pagination top botm "></div>
+
+            <div class="social-icon">
+                <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                <a href="#0"><i class="fab fa-twitter"></i></a>
+                <a href="#0"><i class="fab fa-behance"></i></a>
+                <a href="#0"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== End Slider ==================== -->
+
+
+
+    <div class="main-content">
+
+
+        <!-- ==================== Start about ==================== -->
+
+        <section class="about-us section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 valign md-mb50">
+                        <div class="mb-50">
+                            <h6 class="fw-100 text-u ls10 mb-10">About Us</h6>
+                            <h3 class="fw-600 text-u ls1 mb-30 color-font">Who are we?</h3>
+                            <p>We have been around since 2017. We have made an overwhelming presence on
+                                 the Fiverr Business Market place with over 90% satisfactory results. When 
+                                 clients call we were always there.
+                            </p>
+                            <a href="#0" class="butn bord curve mt-30">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 img">
+                        <img src="{% static 'img/feat.jpg' %}" alt="">
+                        <div class="stauts">
+                            <div class="item">
+                                <h4>50<span>+</span></h4>
+                                <h6>Happy Clients</h6>
+                            </div>
+                            <div class="item">
+                                <h4>140<span>+</span></h4>
+                                <h6>Success Projects</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End about ==================== -->
+
+
+
+        <!-- ==================== Start Services ==================== -->
+
+        <section class="services bords section-padding pt-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="sec-head  text-center">
+                            <h6 class="wow fadeIn" data-wow-delay=".5s">Best Features</h6>
+                            <h3 class="wow color-font">We are a Full stack development agency, so you need nothing else.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".5s">
+                        <div class="item-box md-mb50">
+                            <span class="icon pe-7s-paint-bucket"></span>
+                            <h6>Graphic Design</h6>
+                            <p>With professional skills in Abobe Photoshop,  Adobe XD and Figma, your designs are 
+                                covered.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".7s">
+                        <div class="item-box md-mb50">
+                            <span class="icon pe-7s-phone"></span>
+                            <h6>Web & Mobile Design</h6>
+                            <p>Javascript React and React Native for Web and Mobile respectfully, your are covered on all frontends.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".9s">
+                        <div class="item-box">
+                            <span class="icon pe-7s-display1"></span>
+                            <h6>Backend and Security conciousness</h6>
+                            <p>Python Django is the go to for our backend framework. The most secure framework 
+                                according to The Forum of Incident Response and Security Teams (FIRST).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End Services ==================== -->
+
+
+
+        <!-- ==================== Start works ==================== -->
+
+        <section class="work-carousel metro position-re">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 no-padding">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="content wow noraidus fadeInUp" data-wow-delay=".3s">
+                                        <div class="item-img bg-img wow imago" data-background="{% static 'img/portfolio/metro/01.jpg' %}">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="color-font"><a href="#0">art & illustration</a></h6>
+                                            <h4><a href="project-details2.html">Innovation and Crafts.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content wow noraidus fadeInUp" data-wow-delay=".3s">
+                                        <div class="item-img bg-img wow imago" data-background="{% static 'img/portfolio/metro/02.jpg' %}">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="color-font"><a href="#0">art & illustration</a></h6>
+                                            <h4><a href="project-details2.html">Inspiring new space.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content wow noraidus fadeInUp" data-wow-delay=".3s">
+                                        <div class="item-img bg-img wow imago" data-background="{% static 'img/portfolio/metro/03.jpg' %}">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="color-font"><a href="#0">art & illustration</a></h6>
+                                            <h4><a href="project-details2.html">Natural plus modern.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content wow noraidus fadeInUp" data-wow-delay=".3s">
+                                        <div class="item-img bg-img wow imago" data-background="{% static 'img/portfolio/metro/04.jpg' %}">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="color-font"><a href="#0">art & illustration</a></h6>
+                                            <h4><a href="project-details2.html">Innovation and Crafts.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content wow noraidus fadeInUp" data-wow-delay=".3s">
+                                        <div class="item-img bg-img wow imago" data-background="{% static 'img/portfolio/metro/05.jpg' %}">
+                                        </div>
+                                        <div class="cont">
+                                            <h6 class="color-font"><a href="#0">art & illustration</a></h6>
+                                            <h4><a href="project-details2.html">Inspiring new space.</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- slider setting -->
+                            <div class="swiper-button-next swiper-nav-ctrl simp-next cursor-pointer">
+                                <span class="simple-btn right">Next</span>
+                            </div>
+                            <div class="swiper-button-prev swiper-nav-ctrl simp-prev cursor-pointer">
+                                <span class="simple-btn">Prev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End works ==================== -->
+
+
+
+        <!-- ==================== Start numbers ==================== -->
+
+        <section class="number-sec section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="sec-head  text-center">
+                            <h6 class="wow fadeIn" data-wow-delay=".5s">FUN FACTS</h6>
+                            <h3 class="wow color-font">Pleasure in the job puts perfection in the work.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item no-bord sm-mb50">
+                            <span class="icon pe-7s-smile"></span>
+                            <h3 class=""><span class="count">20</span></h3>
+                            <p class="wow txt" data-splitting="">People who are commited to their
+                                management tasks.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item no-bord sm-mb50">
+                            <span class="icon pe-7s-portfolio"></span>
+                            <h3 class=""><span class="count">163</span></h3>
+                            <p class="wow txt" data-splitting="">Signed projects that have been
+                                confirmed complete!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item no-bord">
+                            <span class="icon pe-7s-medal"></span>
+                            <h3 class=""><span class="count">3</span></h3>
+                            <p class="wow txt" data-splitting="">On Fiverr On time delivery and 
+                                client satisfaction Awards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End numbers ==================== -->
+
+
+
+        <!-- ==================== Start video ==================== -->
+
+        <section class="block-sec">
+            <div class="background bg-img pt-100 pb-0 parallaxie" data-background="{% static 'img/bg-vid.jpg' %}" data-overlay-dark="5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="vid-area">
+                                <span class="text">Watch Video</span>
+                                <div class="vid-icon">
+                                    <a class="vid" href="https://vimeo.com/127203262">
+                                        <div class="vid-butn">
+                                            <span class="icon">
+                                                <i class="fas fa-play"></i>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="testim-box">
+                                <div class="head-box">
+                                    <h6 class="wow fadeIn" data-wow-delay=".5s">Our Clients</h6>
+                                    <h4 class="wow fadeInLeft" data-wow-delay=".5s">What Client's Say?</h4>
+                                </div>
+                                <div class="slic-item wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="item">
+                                        <p>Canon was just the right guy for the Job.</p>
+                                        <div class="info">
+                                            <div class="img">
+                                                <div class="img-box">
+                                                    <img src="{% static 'img/clients/1.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cont">
+                                                <div class="author">
+                                                    <h6 class="author-name ">Alex Regelman</h6>
+                                                    <span class="author-details">Mr. Bee games and entertainment</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p>I found him to be very attentive, this made me comfortable explaining what I needed to him.</p>
+                                        <div class="info">
+                                            <div class="img">
+                                                <div class="img-box">
+                                                    <img src="{% static 'img/clients/2.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cont">
+                                                <div class="author">
+                                                    <h6 class="author-name ">Katherine Chamberlain</h6>
+                                                    <span class="author-details">Chamberlain stores</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p>His service was worth more than I paid for.</p>
+                                        <div class="info">
+                                            <div class="img">
+                                                <div class="img-box">
+                                                    <img src="{% static 'img/clients/3.jpg' %}" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="cont">
+                                                <div class="author">
+                                                    <h6 class="author-name ">Muskiv Chugrov</h6>
+                                                    <span class="author-details">Hos aspana</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End video ==================== -->
+
+
+        <!-- ==================== Start Skills Circle ==================== -->
+
+        <section class="skills-circle pt-50 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="item wow fadeInLeft" data-wow-delay=".6">
+                                        <div class="skill" data-value="0.9">
+                                            <span class="">90%</span>
+                                        </div>
+                                        <div class="cont">
+                                            <span>Project</span>
+                                            <h6>Consulting</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="item wow fadeInLeft" data-wow-delay=".3">
+                                        <div class="skill" data-value="0.85">
+                                            <span class="">85%</span>
+                                        </div>
+                                        <div class="cont">
+                                            <span>App</span>
+                                            <h6>Development</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End Skills Circle ==================== -->
+
+
+
+        <!-- ==================== Start clients Brands ==================== -->
+
+        <section class="clients section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 valign md-mb50">
+                        <div class="sec-head mb-0">
+                            <h6 class="wow fadeIn" data-wow-delay=".5s">Best Features</h6>
+                            <h3 class="wow mb-20 color-font">Our Clients</h3>
+                            <p>Our area of practice is quite wide: design, graphics, branding, development.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <div class="row bord">
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/01.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".6s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/02.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".8s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/03.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/04.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-6 brands sm-mb30">
+                                    <div class="item wow fadeIn" data-wow-delay=".4s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/05.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 brands sm-mb30">
+                                    <div class="item wow fadeIn" data-wow-delay=".7s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/06.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".5s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/07.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6 brands">
+                                    <div class="item wow fadeIn" data-wow-delay=".3s">
+                                        <div class="img">
+                                            <img src="{% static 'img/clients/brands/08.png' %}" alt="">
+                                            <a href="#0" class="link" data-splitting="">www.Vie.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End clients Brands ==================== -->
+
+
+
+        <!-- ==================== Start call-to-action ==================== -->
+
+        <section class="call-action section-padding sub-bg bg-img" data-background="{% static 'img/patrn.svg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-9">
+                        <div class="content sm-mb30">
+                            <h6 class="wow" data-splitting="">Let’s Talk</h6>
+                            <h2 class="wow" data-splitting="">about your <br> <b class="back-color">next project</b>.</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 valign">
+                        <a href="{% url 'contactpage' %}" class="butn bord curve wow fadeInUp" data-wow-delay=".5s"><span>Get In
+                                Touch</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== End call-to-action ==================== -->
+
+{% endblock %}
+    
+</body>
+</html>
