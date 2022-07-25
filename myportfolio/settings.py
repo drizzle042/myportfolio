@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-@0gmc&%wf_7pjxrcy0z2hu8rzrr&%6lrtkfds-f3@v4!+6kk#-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["chukwujiobi-canon.herokuapp.com"]
+ALLOWED_HOSTS = [
+        "drizzle.pythonanywhere.com",
+        "127.0.0.1",
+        "chukwujiobi-canon.herokuapp.com"
+    ]
 
 
 # Application definition
@@ -67,12 +71,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myportfolio.wsgi.application'
-
-SECURE_SSL_REDIRECT = True
-
-SESSION_COOKIE_SECURE = True
-
-CSRF_COOKIE_SECURE = True
 
 
 # Database
@@ -122,8 +120,6 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = BASE_DIR / "static"
-
 STATICFILES_DIRS = [
     ("admin", BASE_DIR / "static/admin"),
     ("img", BASE_DIR / "static/img"),
@@ -131,6 +127,8 @@ STATICFILES_DIRS = [
     ("fonts", BASE_DIR / "static/fonts"),
     ("js", BASE_DIR / "static/js"),
 ]
+
+STATIC_ROOT = BASE_DIR / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
